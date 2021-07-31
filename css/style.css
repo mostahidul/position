@@ -1,0 +1,324 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+*{
+	margin:0 ;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	width: 1200px;
+	margin: auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+img{
+	max-width:100%;
+}
+.col-3{
+
+	max-width: 33.33%;
+	flex: 1 0 33.33%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+/*+++++++ header css +++++++++ */
+
+header{
+	border-bottom: 2px solid #3b506c1a;
+	    padding: 10px 0px;
+}
+
+header .row { 
+	align-items: center;
+ }
+.logo{
+	flex-basis: 20%;
+	max-width: 20%;
+}
+.logo a{}
+.logo a img{}
+nav{
+	flex-basis: 80%;
+	max-width: 80%;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+}
+nav ul li{}
+
+nav ul li a {
+color: #3b506c; 
+padding: 10px 15px;
+	display: block;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 18px;
+
+}
+nav ul li a:hover{
+	color: white;
+}
+
+nav ul li a span{
+	width: 3px;
+    height: 29px;
+    background: black;
+    display: block;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 18px;
+    /* right: 0px; */
+    transform: translatex(-29px);
+    z-index: -1;
+
+}
+
+nav ul li a:hover span{
+	width: 100px;
+}
+
+/*+++++++ Banner-section css +++++++++ */
+
+.banner-section{
+	padding: 50px 0;
+}
+.contant{
+	text-align: center;
+}
+.contant h1{
+	font-size: 55px;
+	color: #3b506c;
+}
+.contant h1 span{
+	display: block;
+	color: #0c66ff;
+}
+.contant h1 span b{
+	display: block;
+    width: 169px;
+    height: 43px;
+    background: black;
+    position: absolute;
+    top: 60%;
+    right: 35%;
+    transform: translate(0px, 0px);
+    z-index: -1;
+}
+
+}
+.contant img {
+	max-width: 400px;
+}
+.contant p{
+	color: #3b506c;
+	max-width: 800px;
+	margin: 20px auto;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+/* feature-section */
+
+.feature-section .row{
+	justify-content: center;
+}
+.feature-content{}
+
+.feature-content h2{
+	font-size: 50px;
+	color: #162c48;
+	line-height:1;
+	font-weight: 800;
+}
+.feature-content h2 span{
+	color: red;
+}
+
+.text-right{
+	text-align: right;
+}
+.feature-content p {
+	color: #3b50cbd;
+	margin: 5px auto;
+	font-size: 19px;
+	font-weight: 400;
+
+}
+
+/*+++++++ Blogs-section css +++++++++ */
+
+
+.blog-section{
+	padding: 50px 0;
+}
+
+.illustration-5{
+ background: #fdebed;
+  }
+
+.illustration-6{
+	background: #ebf9f4;
+
+}
+
+.illustration-7{
+	background: #fff7e8;
+
+}
+.post{
+	padding: 50px 30px;
+}
+.post h3{
+	font-size: 24px;
+	color: #162c48;
+	line-height:1;
+	font-weight: 600;
+}
+.post p{
+	color: #3b50cbd;
+	margin: 5px auto;
+	font-size: 17px;
+	font-weight: 400;}
+
+.post img{
+	max-height: 160px;
+	display: block;
+	margin: auto;
+	margin-bottom: 25px;
+}
+
+/*+++++++ Footer  css +++++++++ */
+
+footer{
+	background: #0c66ff;
+	text-align: center;
+	padding: 30px 0;
+}
+footer p{
+	color: #ffffff94;
+}
+footer p strong{
+	color: white;
+}
+
+/**sociallist**/
+.sociallist{
+	display: flex;
+    list-style: none;
+    flex-direction: row;
+    position: static;
+    top: auto;
+    transform: translateY(0);
+    align-items: center;
+    left: auto;
+    justify-content: center;
+}
+.sociallist li{
+	max-width: 30px;
+    margin-bottom: 30px;
+}
+.sociallist li a{
+	display: inline-block;
+    background: black;
+    color: white;
+    padding: 6px;
+    margin-bottom: 2px;
+    border-radius: 50%;
+    max-width: 15px;
+    height: 20px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #0000003b;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+}
+.sociallist li a:hover{
+
+	background: transparent;
+	color: black;
+}
+
+
+@media (max-width: 1200px){
+	.container{
+		width: 900px;
+	}
+	.contant h1 {
+		font-size: 45px;
+	}
+}
+@media (max-width: 992px){
+	.container{
+		width: 700px; 
+	}
+	.feature-content h2 {
+		font-size: 14px;
+}
+	.post p {
+		font-size: 14px;
+	}
+	.post img {
+		max-height: 105px;
+	}
+}
+
+@media (max-width: 768px){
+	.container{
+		width: 100%;
+		padding: 0 15px;
+	}
+	.sociallist li a {
+		width: 35px;
+		font-size: 12px;
+		height: 35px;
+	}
+}
+
+@media (max-width: 575px){
+	.logo,nav {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	nav ul {
+		justify-content: center;
+	}
+.logo{
+	text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
